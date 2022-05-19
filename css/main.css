@@ -3,6 +3,7 @@
     --dark-color: #13183F;
     --white-color: #fff;
     --orange-color: #F74780;
+    --btn-hover: #666CA3;
     --font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     --body-bg-color: #fff;
 }
@@ -84,6 +85,30 @@ a {
     margin-right: auto;
 }
 
+.btn {
+    font-weight: 700;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    border-radius: 28px;
+    padding: 14px 31px 14px 32px;
+    white-space: nowrap;
+    transition: background-color 0.4s ease;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.btn--orange {
+    background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    padding: 19px 31px 16px 32px;
+    border-radius: 31.5px;
+}
+
+.btn--orange:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
 .main-content {
     flex-grow: 1;
 }
@@ -113,12 +138,76 @@ a {
     transition: 0.4s ease opacity;
 }
 
-.btn {
+/* Hero */
+.hero {
+    width: 1275px;
+    position: relative;
+    padding-top: 185px;
+    padding-bottom: 226px;
+}
+
+.hero__content {
+    width: 457px;
+}
+
+.hero__heading {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 71px;
+    color: var(--dark-color);
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+.hero__main-text {
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.hero__img-girl {
+    position: absolute;
+    top: 87px;
+    left: 739px;
+    width: 317px;
+    height: 560px;
+}
+
+.hero__img-ellips {
+    position: absolute;
+    z-index: -1;
+    top: -160px;
+    left: 740px;
+}
+
+.course {
+    position: absolute;
+    top: 443px;
+    left: 619px;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: var(--white-color);
+    padding: 20px 72px 20px 24px;
+    box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
+}
+
+.course--members {
+    position: absolute;
+    top: 204px;
+    left: 1019px;
+    padding-right: 57px;
+}
+
+.course__text {
     font-weight: 700;
-    color: var(--white-color);
-    background-color: var(--dark-color);
-    border-radius: 28px;
-    padding: 14px 31px 14px 32px;
-    white-space: nowrap;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.course__number {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--dark-color);
 }
 
