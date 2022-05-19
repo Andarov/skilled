@@ -1,11 +1,39 @@
 :root {
-    --text-color: ;
-    --font-family: ;
-    --body-bg-color: ;
+    --text-color: #83869A;
+    --dark-color: #13183F;
+    --white-color: #fff;
+    --orange-color: #F74780;
+    --font-family: "Plus Jakarta Sans", "Arial", sans-serif;
+    --body-bg-color: #fff;
 }
 
 /* FONTS */
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    src:url("../fonts/plus-jakarta-sans-v2-latin-500.woff2") format("woff2"), 
+         url("../fonts/plus-jakarta-sans-v2-latin-500.woff") format("woff");
+    font-display: swap;
+  }
 
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    src:url("../fonts/plus-jakarta-sans-v2-latin-700.woff2") format("woff2"), 
+         url("../fonts/plus-jakarta-sans-v2-latin-700.woff") format("woff");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 800;
+    src:url("../fonts/plus-jakarta-sans-v2-latin-800.woff2") format("woff2"), 
+         url("../fonts/plus-jakarta-sans-v2-latin-800.woff") format("woff");
+    font-display: swap;
+  }
 
 html {
     height: 100%;
@@ -31,9 +59,9 @@ body {
     background-color: var(--body-bg-color);
     font-family: var(--font-family);
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
     color: var(--text-color);
 }
 
@@ -49,7 +77,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: px;
+    max-width: 1150px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -59,3 +87,38 @@ a {
 .main-content {
     flex-grow: 1;
 }
+
+/* Header */
+
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.site-header__logo-link {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.site-header__logo-link:hover {
+    opacity: 0.6;
+}
+
+.site-header__logo {
+    width: 111px;
+    height: 28px;
+    transition: 0.4s ease opacity;
+}
+
+.btn {
+    font-weight: 700;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    border-radius: 28px;
+    padding: 14px 31px 14px 32px;
+    white-space: nowrap;
+}
+
