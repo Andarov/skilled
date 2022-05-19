@@ -3,6 +3,7 @@
     --dark-color: #13183F;
     --white-color: #fff;
     --orange-color: #F74780;
+    --bottom-link: #FFA7C3;
     --btn-hover: #666CA3;
     --font-family: "Plus Jakarta Sans", "Arial", sans-serif;
     --body-bg-color: #fff;
@@ -211,3 +212,117 @@ a {
     color: var(--dark-color);
 }
 
+/* List */
+/* BOXES */
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: -30px;
+    margin-bottom: -9px;
+    padding-bottom: 60px;
+}
+
+.box-simple {
+    width: 350px;
+    padding: 64px 32px 64px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+    background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.box-simple__content {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    color: var(--white-color);
+}
+
+.box {
+    position: relative;
+    width: 350px;
+    padding: 64px 32px 40px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+}
+
+.box__icon {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.box__link {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--dark-color);
+    margin-bottom: 24px;
+}
+
+.box__text {
+    flex-grow: 1;
+    margin-bottom: 24px;
+}
+
+.box__bottom-link {
+    font-weight: 700;
+    color: var(--orange-color);
+}
+
+.box__bottom-link:hover {
+    color: var(--bottom-link);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+}
+
+svg {
+    color: var(--white-color);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer__logo-link {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.footer__logo-link:hover {
+    opacity: 0.6;
+}
+
+.footer__logo {
+    width: 111px;
+    height: 28px;
+    transition: 0.4s ease opacity;
+}
+
+.btn--footer {
+    background-image: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.btn--footer:hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
